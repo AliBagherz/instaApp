@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:navig/List_Stories.dart';
+import 'package:navig/instaPost.dart';
 
 class HomePage extends StatelessWidget {
 
@@ -14,7 +15,7 @@ class HomePage extends StatelessWidget {
             child: ListStories(),
           );
         } else {
-          return new Container();
+          return new InstaPost();
         }
       },
     );
