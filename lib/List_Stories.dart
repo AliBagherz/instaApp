@@ -6,11 +6,11 @@ class ListStories extends StatelessWidget {
   Row topText = new Row(
     mainAxisAlignment: MainAxisAlignment.spaceBetween,
     children: <Widget>[
-      new Text('Stories' , style: TextStyle(fontWeight: FontWeight.bold)),
+      new Text('استوری ها' , style: TextStyle(fontWeight: FontWeight.bold)),
       new Row(
         children: <Widget>[
-          new Text('Watch All' , style: TextStyle(fontWeight: FontWeight.bold)),
-          new Icon(Icons.play_arrow)
+          new Icon(Icons.play_arrow),
+          new Text('مشاهده همه' , style: TextStyle(fontWeight: FontWeight.bold))
         ],
       )
     ],
@@ -35,7 +35,7 @@ class ListStories extends StatelessWidget {
                           image: NetworkImage("http://up.iranblog.com/uploads/cee867e5c207114c722c35bd8791aaf1.jpg")
                       )
                   ),
-                  margin: EdgeInsets.all(5.0),
+                  margin: EdgeInsets.fromLTRB(5.0, 5.0, 5.0, 1.0),
                 ),
                 index == 0 ?
                     new CircleAvatar(
@@ -55,7 +55,7 @@ class ListStories extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Container(
-      margin: EdgeInsets.all(16.0),
+      margin: EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 5.0),
       child: new Column(
         children: <Widget>[
           topText,

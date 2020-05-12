@@ -10,8 +10,9 @@ class MyApp extends StatelessWidget {
     return new MaterialApp(
         title: 'InstaApp',
         debugShowCheckedModeBanner: false,
-        home: new MyHomePage(),
+        home: new  Directionality(textDirection: TextDirection.rtl, child: MyHomePage()),
       theme: new ThemeData(
+        fontFamily: 'IranSans',
         primaryIconTheme: IconThemeData(color: Colors.black),
         primaryTextTheme: TextTheme(title: TextStyle(color: Colors.black)),
       ),

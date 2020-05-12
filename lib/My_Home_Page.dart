@@ -58,7 +58,7 @@ class MyHomePageState extends State<MyHomePage> {
     ),
     leading: new Icon(Icons.camera_alt),
     actions: <Widget>[
-      new Padding(padding: EdgeInsets.only(right: 12.0) ,child: new Icon(Icons.send)),
+      new Padding(padding: EdgeInsets.only(left: 12.0) ,child: new Icon(Icons.send)),
     ],
     centerTitle: true,
     elevation: 1.0,
